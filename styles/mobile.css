@@ -1,0 +1,245 @@
+header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header h1 {
+    width: 85%;
+    font-size: 10vw;
+    text-align: center;
+    /* background-color: green; */
+}
+
+@keyframes label-bg-color {
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: lightgray;
+    }
+    /*
+    0% {
+        background-color: white;
+    }
+
+    25% {
+        background-color: lightgray;
+    }
+
+    50% {
+        background-color: lightblue;
+    }
+
+    75% {
+        background-color: darkblue;
+    }
+
+    100% {
+        background-color: white;
+    }
+ */
+}
+
+header label {
+    font-size: 10vw;
+    width: 15%;
+    /* background-color: darkblue; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    animation: label-bg-color 1s ease-in-out infinite alternate;
+    padding: 2.5vw;
+    border-radius: 2.5vw;
+}
+
+label i {
+    align-self: center;
+}
+
+header nav {
+    display: none;
+}
+
+#nav-hide:checked+nav {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(119, 136, 153, 0.250);
+    border-radius: 2.5vw;
+    padding: 2vw;
+    margin: 1vw;
+    gap: 1.5vw;
+}
+
+header nav a {
+    text-decoration: none;
+    width: 30%;
+    flex-flow: row wrap;
+    color: black;
+    border: 0.5vw solid rgba(0, 0, 0, 0.500);
+    border-radius: 5vw;
+    text-align: center;
+    font-size: 5.5vw;
+}
+
+header nav a i {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main nav{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    border: 1vw solid lightyellow;
+    border-radius: 2vw;
+    margin: 2.5vw;
+    text-align: center;
+    justify-content: center;
+}
+
+main nav h2{
+    width: 100%;
+}
+
+main nav a{
+    width: 30%;
+}
+
+main nav a i{
+    width: 100%;
+}
+
+
+main figure {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main figure img {
+    height: auto;
+    width: 30%;
+    border-radius: 150px;
+}
+
+main figure ul {
+    list-style: none;
+    width: 70%;
+    align-self: center;
+    padding-left: 1vw;
+    font-size: 5.5vw;
+    text-align: center;
+}
+
+.table-container {
+    display: none;
+}
+
+main section {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2.5vw;
+    background-color: lightyellow;
+}
+
+main section h2 {
+    width: 100%;
+    text-decoration-line: underline;
+}
+
+main section p{
+    text-align: justify;
+    font-size: 5.5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5vw;
+}
+
+main section article h3 {
+    width: 100%;
+}
+
+main section article {
+    width: 45%;
+    font-size: 5.5vw;
+}
+
+main section article ul {
+    list-style-type: "-";
+}
+
+main section article ul li {
+    margin: 5vw;
+}
+
+section#skills {
+    width: 100%;
+}
+
+section#skills article {
+    width: 100%;
+    display: flex;
+
+}
+
+#skills article ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#skills article ul li{
+    margin: 2vw;
+}
+
+#skills article ul ul {
+    margin-left: 5vw;
+    margin: 5vw;
+}
+
+.ul-title{
+    text-decoration: underline;
+}
+
+
+
+
+footer {
+    width: 100%;
+    bottom: 0px;
+    position: sticky;
+    gap: 2 vw;
+    display: flex;
+    font-size: 5.5vw;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: yellow;
+    padding: 2.5vw;
+}
+footer a {
+    color: black;
+    width: 30%;
+    text-align: center;
+    align-self: center;
+
+}
+
+footer a i {
+    width: 100%;
+}
+
+a#top{
+    position: sticky;
+    bottom: 18vw;
+    font-size: 12vw;
+    color: rgba(0, 0, 0, 0.5);
+}

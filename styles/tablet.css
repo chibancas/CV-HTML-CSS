@@ -1,0 +1,28 @@
+.table-container{
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.table-container table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 0.5vw solid black;
+    border-radius: 5vw;
+    overflow:hidden;
+}
+
+/* se aplica a la fila TableRow */
+.table-container table tr{
+    border: 0.5vw solid black;
+
+}
+
+/* se aplica a la celda  de forma individual o datos de la celda TableData */
+.table-container table tr td{
+    border: 0.5vw solid black;
+    border-radius: 5vw;
+    text-align: center;
+    font-size: 5.5vw;
+    padding: 2.5vw;
+}
