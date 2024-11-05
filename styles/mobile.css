@@ -1,3 +1,5 @@
+/* index styles */
+
 header {
     display: flex;
     flex-flow: row wrap;
@@ -11,12 +13,14 @@ header h1 {
 }
 
 @keyframes label-bg-color {
-    0%{
+    0% {
         background-color: white;
     }
-    100%{
+
+    100% {
         background-color: lightgray;
     }
+
     /*
     0% {
         background-color: white;
@@ -93,7 +97,7 @@ main {
     flex-flow: row wrap;
 }
 
-main nav{
+main nav {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -104,15 +108,16 @@ main nav{
     justify-content: center;
 }
 
-main nav h2{
+main nav h2 {
     width: 100%;
 }
 
-main nav a{
+main nav a {
     width: 30%;
+    font-size: 5vw;
 }
 
-main nav a i{
+main nav a i {
     width: 100%;
 }
 
@@ -148,7 +153,6 @@ main section {
     flex-flow: row wrap;
     justify-content: center;
     gap: 2.5vw;
-    background-color: lightyellow;
 }
 
 main section h2 {
@@ -156,7 +160,7 @@ main section h2 {
     text-decoration-line: underline;
 }
 
-main section p{
+main section p {
     text-align: justify;
     font-size: 5.5vw;
     padding-left: 5vw;
@@ -196,7 +200,7 @@ section#skills article {
     list-style-position: inside;
 }
 
-#skills article ul li{
+#skills article ul li {
     margin: 2vw;
 }
 
@@ -205,7 +209,7 @@ section#skills article {
     margin: 5vw;
 }
 
-.ul-title{
+.ul-title {
     text-decoration: underline;
 }
 
@@ -225,6 +229,7 @@ footer {
     background-color: yellow;
     padding: 2.5vw;
 }
+
 footer a {
     color: black;
     width: 30%;
@@ -237,9 +242,115 @@ footer a i {
     width: 100%;
 }
 
-a#top{
+a.top {
     position: sticky;
     bottom: 18vw;
     font-size: 12vw;
     color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/* contact styles */
+
+form {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(173, 216, 230, 0.5);
+    border: 1vw solid skyblue;
+    border-radius: 3vw;
+    margin: 4vw;
+    padding: 2.5vw;
+    gap: 4vw;
+}
+
+form input {
+    width: 80%;
+}
+
+form input,
+form textarea {
+    padding: 2vw;
+    font-size: 5.5vw;
+    border: 0.1vw solid white;
+    border-radius: 5vw;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    text-align: center;
+    font-size: 6vw;
+}
+
+form input:focus,
+form textarea:focus {
+    transition: 0.5s;
+    padding: 2vw;
+    font-size: 5.5vw;
+    background-color: rgba(173, 216, 230, 0.3);
+    color: black;
+    font-weight: 600;
+    border: 0.8vw solid black;
+}
+
+form textarea {
+    width: 90%;
+}
+
+form button {
+    text-align: center;
+    width: 30%;
+    border-radius: 5vw;
+    font-size: 5.5vw;
+    text-align: center;
+    border: 0.1vw solid white;
+}
+
+form button:active {
+    background-color: rgba(0, 0, 139, 0.3);
+    transition: 0.5s ease;
+    border: 0.1vw solid black;
+}
+
+main#contact-main {
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+}
+
+main#contact-main h2{
+    text-align: center;
+    width: 100%;
+}
+
+
+main#contact-main section h2 {
+    text-decoration: none;
+    font-size: 7vw;
+    text-align: center;
+    justify-content: center;
+}
+
+main#contact-main section a {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+main#contact-main section a span {
+    width: 100%;
+    font-size: 8vw;
+}
+
+i#move {
+    font-size: 8vw;
+    text-align: left;
+    width: 100%;
+}
+
+footer#contact-footer {
+    bottom: 0px ;
 }
