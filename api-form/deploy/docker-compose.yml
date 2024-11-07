@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:14.3
+    restart: always
+    # environment:
+    #   - DB_HOST=192.168.1.100
+    #   - DB_PORT=5432
+    #   - DB_USERNAME=postgres
+    #   - DB_NAME=api-name
+    #   - DB_PASSWORD=api-password
+    env_file:
+      - .env
+    environment:
+      - "POSTGRES_DB=${DB_NAME}"
+      - "POSTGRES_USER=${DB_USERNAME}"
+      - "POSTGRES_PASSWORD=${DB_PASSWORD}"
+    ports:
+      - "${DB_PORT}:5432"
+    container_name: picaso
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
