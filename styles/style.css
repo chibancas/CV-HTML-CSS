@@ -14,3 +14,7 @@ body {
 a {
     text-decoration: none;
 }
+
+#hide4contact{
+    display: none;
+}

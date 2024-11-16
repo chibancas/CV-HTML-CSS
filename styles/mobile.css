@@ -343,11 +343,12 @@ main#contact-main section a {
 main#contact-main section a span {
     width: 100%;
     font-size: 8vw;
+    text-decoration: black 1vw underline ;
 }
 
-i#move {
+i#mail {
     font-size: 8vw;
-    text-align: left;
+    text-align: center;
     width: 100%;
 }
 

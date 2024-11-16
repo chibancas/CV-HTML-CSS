@@ -10,10 +10,10 @@ export class User {
     @Column('text',{unique:false, nullable:true})
     name:string
 
-    @Column('text',{unique:false, nullable:true})
+    @Column('text',{unique:true, nullable:true})
     email:string
 
-    @Column('text',{unique:false, nullable:true})
+    @Column('text',{unique:false, nullable:false})
     msg:string
 
 }
