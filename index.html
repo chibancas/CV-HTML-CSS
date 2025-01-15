@@ -1,249 +1,155 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - juanjoseo</title>
-
-    <link rel="shortcut icon" href="./imgs/html5-brands-solid.svg" type="image/x-icon">
-
-    <!-- hojas de estilos -->
-    <link rel="stylesheet" href="./styles/mobile.css"
-        media="(min-width: 0px) and (hover: none) and (pointer: coarse) and (orientation: portrait)">
-    <link rel="stylesheet" href="./styles/tablet.css"
-        media="(min-width: 768px) and (hover: none) and (pointer: coarse) and (orientation: landscape)">
-    <link rel="stylesheet" href="./styles/desktop.css"
-        media="(min-width: 1025px) and (hover: hover) and (pointer: fine) and (orientation: landscape)">
-    <!-- hojas de estilos -->
-    <link rel="stylesheet" href="/styles/style.css">
-
-
-    <!-- CDN FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CDN FontAwesome -->
-
-
-
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./all.min.css"> -->
+     <link rel="shortcut icon" href="favicon-info.png" type="image/x-icon">
+    <title>CV Juan José Fernández</title>
 </head>
 
 <body>
     <header>
-        <h1 id="start">Bienvenidos</h1>
-
-        <!-- "Boton" con label para hacer aparecer nav -->
-        <label id="nav-btn" for="nav-hide">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <input type="checkbox" id="nav-hide" style="display: none;">
-        <!-- "Boton" con label para hacer aparecer nav -->
-
+        <figure>
+            <img src="./retrato-removebg-preview.png" alt="Retrado de Juan José Fernández">
+        </figure>
+        <section>
+            <h1>
+                Juan José Fernández
+            </h1>
+            <h2>
+                Técnico administrador de sistemas informmáticos en red
+            </h2>
+        </section>
         <nav>
-            <a href="./index.html">
-                <!-- <i class="fa-sharp fa-solid fa-house"></i> -->
-                <i class="fa-regular fa-star"></i>
-                <span>Inicio</span>
-            </a>
-            <a href="./proyects.html">
-                <i class="fa-solid fa-diagram-project"></i>
-                <span>Proyectos</span>
-            </a>
-            <a href="./services.html">
-                <i class="fa-brands fa-sellsy"></i>
-                <span>Servicios</span>
-            </a>
-            <!-- <a href="./contact.html">
-                <i class="fa-brands fa-rocketchat"></i>
-                <span>Contacto</span> -->
-            </a>
+            <a href="#about">Sobre mi</a>
+            <a href="#education">Formación</a>
+            <a href="#skills">Habilidades</a>
         </nav>
     </header>
-
-
     <main>
-        <nav>
-            <h2>Índice</h2>
-            <a href="#about">
-                <i class="fa-solid fa-address-card"></i>
-                <span>Sobre mí</span>
-            </a>
-            <a href="#studies">
-                <i class="fa-brands fa-readme"></i>
-                <span>Formación</span>
-            </a>
-            <a href="#skill">
-                <i class="fa-solid fa-list-check"></i>
-                <span>Habilidades</span>
-            </a>
-        </nav>
-        <figure>
-            <img src="./imgs/avatar-jj.png" alt="Foto de Juan José Fernández">
-            <ul>
-                <li>Juan José Fernández</li>
-                <li>Vera, Almería, 04620</li>
-                <li>Aportando puntos de vista diferentes.</li>
-            </ul>
-        </figure>
-
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <td colspan="3">
-                            Formación
-                        </td>
-                    </tr>
-                </thead>
-
-                <tr>
-                    <td>
-                        Titulaciones
-                    </td>
-                    <td>
-                        Técnico Superior en Administración de Sistemas Informáticos en Red
-                        <br>
-                        (2022 - 2024)
-                    </td>
-                    <td>
-                        Técnico en Sistemas Microinformáticos y Redes
-                        <br>
-                        (2020 - 2022)
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Experiencia
-                    </td>
-                    <td>
-                        Prácticas en DXC Technology para Cajamar
-                        <br>
-                        (3 meses)
-                    </td>
-                    <td>
-                        Prácticas en el Ayto. de Vera
-                        <br>
-                        (3 meses)
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3"></td>
-                </tr>
-            </table>
-        </div>
-
-        <section>
-            <h2 id="about">Sobre mí</h2>
-            <p>
-                Soy Juan José, técnico en informática con formación de grado medio y grado superior en el área. Desde
-                siempre he tenido una gran pasión por la tecnología, y a pesar de mi discapacidad visual me esfuerzo por mantenerme actualizado con las
-                últimas tendencias y novedades. Actualmente, mis intereses se centran en la administración de
-                contenedores con Docker y en el desarrollo web. Sé que tengo mucho por mejorar, aún así estoy
-                preparado para entrar al mundo laboral para explotar y expandir mis conocimientos y habilidades.
-            </p>
-        </section>
-
-        <section>
-            <h2 id="studies">Formación</h2>
-            <article>
+        <aside>
+            <h2 id="about">
+                Sobre mi
+            </h2>
+            <article class="soft-skills">
                 <h3>
-                    Titulaciones
+                    Aptitudes
                 </h3>
                 <ul>
-                    <li>
-                        Técnico Superior en Administración de Sistemas Informáticos en Red
-                        <br>
-                        (2022 - 2024)
-
-                    </li>
-                    <li>
-                        Técnico en Sistemas Microinformáticos y Redes
-                        <br>
-                        (2020 - 2022)
-
-                    </li>
+                    <li>Responsable</li>
+                    <li>Observador</li>
+                    <li>Apasionado por la tecnología</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Dispuesto a afrontar retos y adquirir nuevos conocimientos</li>
                 </ul>
             </article>
 
-            <article>
-                <h3>Prácticas</h3>
+            <article class="languages">
+                <h3>
+                    Idiomas
+                </h3>
                 <ul>
-                    <li>Prácticas en DXC Technology para Cajamar</li>
-                    <li>Prácticas en el Ayto. de Vera</li>
+                    <li>Español - Nativo</li>
+                    <li>Ingles - Intermedio</li>
                 </ul>
             </article>
-        </section>
 
-        <section id="skills">
-            <h2 id="skill">
-                Habilidades
+            <article class="contact">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:jj.ff.tecno@gmail.com">jj.ff.tecno@gmail.com</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+34637856035">+34 637 85 60 35</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i> <a
+                            href="https://wa.me/34637856035?text=Hola%20te%20escribo%20desde%20el%20enlace%20que%20tienes%20puesto%20en%20tu%20CV">
+                            +34 637 85 60 35
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://juanfer.vercel.app">Mi Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/juan-josé-fernández-fernández-16b8a52a8/">
+                            Perfil de LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="others">
+                <h3>Otros</h3>
+                <ul>
+                    <li>Discapacidad visual certificada</li>
+                </ul>
+            </article>
+        </aside>
+
+        <section>
+            <h2 id="education">
+                Formación
             </h2>
+            <article class="asir">
+                <h4>CFGS ASIR (2022-2024)</h4>
+                <ul>
+                    <li>
+                        Ciclo de grado superior en administración de sistemas informmáticos en red
+                    </li>
+                    <li>IES Cura Valera, Huércal-Overa</li>
+                </ul>
+            </article>
+            <article class="smr">
+                <h4>CFGM SMR (2020-2022)</h4>
+                <ul>
+                    <li>
+                        Ciclo formativo de grado medio en sistemas microinformáticos en red
+                    </li>
+                    <li>IES Cura Valera, Huércal-Overa</li>
+                </ul>
+            </article>
+
+            <h2 id="skills">Habilidades</h2>
             <article>
                 <ul>
-                    <li>Montaje y mantenimiento de equipos</li>
-                    <ul>
-                        <li class="ul-title">Programación web</li>
-                        <li>HTML, CSS y JS</li>
-                        <li>React con base en TypeScript</li>
-                        <li>Frontend Next.js, Backend Nest.js</li>
-                        <li>Despliegue continuo de aplicaciones con Jenkins</li>
+                    <li>Montaje y manteniemdo de equipos</li>
+                    <li class="title">Programación Web</li>
+                    <ul class="subul">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React-Ts</li>
+                        <li>Fronted: NextJs - Backend: NestJs</li>
                     </ul>
-                    <li>Administración de equipos Windows y Linux, clientes y servidores. Bash Scripting y PowerShell
-                    </li>
-                    <li>Creación de entornos empresariales en sistemas de virtualización como VirtualBox, Hyper-V y
-                        VMware</li>
-                    <li>Conocimientos básicos en bases de datos SQL</li>
-                    <ul>
-                        <li class="ul-title">Ofimática avanzada</li>
+                    <li>Administración de servidores y clientes Windows y Linux</li>
+                    <li>Scripting con Bash y PowerShell</li>
+                    <li>Virtualización con VirtualBox, VMware y Hyper-V</li>
+                    <li>Despliegue de aplicaciones en contenedores con Docker y Kubernetes</li>
+                    <li>Administración de contenedores con Ansible</li>
+                    <li class="title">Ofimática avanzada</li>
+                    <ul class="subul">
                         <li>Documentos</li>
                         <li>Hojas de cálculo</li>
                         <li>Bases de datos</li>
-                        <li>Edición de imagen y vídeo</li>
+                        <li>Edición de imágen y vídeo</li>
                     </ul>
-                    <ul>
-                        <li class="ul-title">Uso de Kubernetes y Docker para creación de contenedores</li>
-                        <li>Administración de contenedores con Ansible</li>
-                    </ul>
+                    <li>Bases de datos SQL</li>
                 </ul>
             </article>
         </section>
     </main>
-
-
-    <footer>
-
-        <a href="https://github.com/chibancas">
-            <figure>
-                <i class="fa-brands fa-github"></i>
-                <span>
-                    Mi Código
-                </span>
-            </figure>
-        </a>
-
-        <a href="./contact.html">
-            <figure>
-                <i class="fa-brands fa-intercom"></i>
-                <span>
-                    Contacto
-                </span>
-            </figure>
-        </a>
-
-        <a href="https://www.linkedin.com/in/juan-jos%C3%A9-fern%C3%A1ndez-fern%C3%A1ndez-16b8a52a8/">
-            <figure>
-                <i class="fa-brands fa-linkedin"></i>
-                <span>Networking</span>
-            </figure>
-        </a>
-
-    </footer>
-
-    <a class="top" href="#start">
-        <i class="fa-solid fa-arrow-up"></i>
-    </a>
-    <script src="./js/tab-name-changer.js" defer></script>
 </body>
 
 </html>
